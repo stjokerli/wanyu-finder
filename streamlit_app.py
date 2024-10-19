@@ -36,7 +36,7 @@ def main():
     st.write("This app allows you to search for words in a given matrix of letters.")
 
     # Input from user: matrix as multiline text
-    doc_string = st.text_area("Enter the matrix (one row per line, may separated by spaces):")
+   doc_string = st.text_area("Enter the matrix (one row per line, separated by spaces):")
     words_to_find = st.text_input("Enter words to find (comma-separated):", "WHARTON, SCHOOL, BUSINESS, FUTURE, MONEY")
 
     if doc_string.strip():
@@ -54,8 +54,10 @@ def main():
             st.write(f"The word '{word}' appears {count} times.")
             total_count += count
 
-        st.write(f"\nTotal count of all words is :")
+        st.write(f"\nTotal count of all words:")
         st.code(total_count, language='text')
+
+    st.write("All rights reserved by [Wanyu Li](https://www.linkedin.com/in/li-wanyu/)")
 
 if __name__ == "__main__":
     main()
