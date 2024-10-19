@@ -54,7 +54,8 @@ def main():
             st.write(f"The word '{word}' appears {count} times.")
             total_count += count
 
-        st.write(f"\nTotal count of all words = {total_count}")
+        st.write(f"\nTotal count of all words is :")
+        st.code(total_count, language='text')
 
 if __name__ == "__main__":
     main()
