@@ -36,7 +36,7 @@ def main():
     st.write("This app allows you to search for words in a given matrix of letters.")
 
     # Input from user: matrix as multiline text
-   doc_string = st.text_area("Enter the matrix (one row per line, separated by spaces):")
+    doc_string = st.text_area("Enter the matrix (one row per line, separated by spaces):")
     words_to_find = st.text_input("Enter words to find (comma-separated):", "WHARTON, SCHOOL, BUSINESS, FUTURE, MONEY")
 
     if doc_string.strip():
